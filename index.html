@@ -1,0 +1,17 @@
+---
+title: data by jess
+---
+
+<ul class="posts-grid">
+  {% for post in site.posts %}
+  <a href="{{ post.url }}" class="post-card-link">
+    <li class="post-card">
+      {% if post.image %}
+      <img src="{{ post.image }}" alt="{{ post.title }}" />
+      {% endif %}
+      <!-- post.url is automatically set by jekyll to the output path of the post -->
+      <h2 class="post-card-title">{{ post.title }}</h2>
+    </li>
+  </a>
+  {% endfor %}
+</ul>
