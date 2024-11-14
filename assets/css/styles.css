@@ -125,6 +125,10 @@ a.post-card-link {
   list-style: none; /* Removes default <li> tag styling */
 }
 
+td > img {
+  width: 100%;
+}
+
 /* Tablets 520-768px wide */
 @media screen and (min-width: 520px) {
   .posts-grid {
@@ -136,6 +140,9 @@ a.post-card-link {
 @media screen and (min-width: 768px) {
   .posts-grid {
     grid-template-columns: repeat(4, 1fr); /* 4 cols  */
+  }
+  td > img {
+    width: 50%;
   }
 }
 
@@ -174,8 +181,4 @@ a.post-card-link {
 
 .post-content > table {
   margin: 20px auto;
-}
-
-td > img {
-  max-width: 50%;
 }
