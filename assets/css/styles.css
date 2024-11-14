@@ -169,14 +169,13 @@ a.post-card-link {
 
 .post-content {
   max-width: 100%;
-  padding: 0 20px;
+  padding: 0;
 }
 
-.post-content p {
-  display: flex;
-  width: 100%;
+.post-content > table {
+  margin: 20px auto;
 }
 
-.post-content img {
-  margin: auto;
+td > img {
+  max-width: 50%;
 }

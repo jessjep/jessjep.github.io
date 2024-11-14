@@ -5,4 +5,4 @@ title: about
 
 ## About me
 
-A bit about me...
+Welcome to my data portfolio website!
