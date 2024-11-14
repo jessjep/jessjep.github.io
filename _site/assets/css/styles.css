@@ -21,10 +21,12 @@ h2 {
 /* Container for all the website content (header, main, and footer) */
 body {
   max-width: var(--max-page-width);
+  width: 100%;
   margin: auto; /* Centers the website content within the browser */
   display: flex; /* Flex layout allows easier control over the layout */
   flex-direction: column; /* Stacks elements in the body vertically - helps align footer at bottom of page */
   min-height: 100vh;
+  padding: 0 20px;
 }
 
 /* Default (mobile) */
@@ -87,12 +89,13 @@ a.current-nav-link {
 
 /* "Grid" that contains all the posts displayed on the homepage */
 .posts-grid {
-  display: flex; /* Allows using flex layout css properties (e.g. flex-wrap) */
-  flex-wrap: wrap; /* When screen size decreases, if there is no space for an item in the grid, it moves to the next line/row */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 column on mobile by default */
+  gap: 10px;
   padding: 0;
 }
 
-.post-card:hover {
+.post-card-container:hover {
   animation: hover-card 0.4s; /* Card opacity changes when hovering */
   animation-fill-mode: forwards; /* Animation ends and does not go back to 1 opacity unless hover stops */
   cursor: pointer;
@@ -118,42 +121,44 @@ a.post-card-link {
 }
 
 /* Default (mobiles, <460px wide) */
-.post-card {
+.post-card-container {
   list-style: none; /* Removes default <li> tag styling */
-  width: 100%; /* A post "card" will be the entire width of the container (one column) */
-  padding: 5px;
 }
 
-/* Tablets (460-1024px wide) */
-@media screen and (min-width: 460px) {
-  .post-card {
-    width: calc(
-      50%
-    ); /* A post "card" will be the half width of the container (two columns) */
+/* Tablets 520-768px wide */
+@media screen and (min-width: 520px) {
+  .posts-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 cols */
+  }
+}
+
+/* Small screens 768-1024px wide */
+@media screen and (min-width: 768px) {
+  .posts-grid {
+    grid-template-columns: repeat(4, 1fr); /* 4 cols  */
   }
 }
 
 /* Desktops (>1024px wide) */
 @media screen and (min-width: 1024px) {
-  .post-card {
-    width: calc(
-      33.33333%
-    ); /* A post "card" will be the 1/3 width of the container (three columns) */
+  .posts-grid {
+    grid-template-columns: repeat(5, 1fr); /* 5 cols */
   }
 }
 
 /* Image container to control potential overflow of image from post card if image is not the same aspect ratio */
 .post-card-image-wrapper {
+  width: 100%;
+  aspect-ratio: 8/5;
   overflow: hidden;
-  width: 100%; /* Ensures it takes the full width of .post-card */
 }
 
 .post-card-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  overflow: hidden;
-  object-position: top left;
+  object-fit: cover; /* Image "covers" entire container (doesn't shrink to fit) */
+  overflow: hidden; /* If the image is bigger than its container, it is cropped */
+  object-position: top left; /* Image is positioned starting at top-left corner */
 }
 
 /* Post date shown under title on a blog post page */
