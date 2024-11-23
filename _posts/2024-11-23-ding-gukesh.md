@@ -1,3 +1,4 @@
+---
 title: "Ding v Gukesh"
 date: 2024-11-23
 image: "/assets/images/chess/dinggukesh.png"
