@@ -18,70 +18,45 @@ h2 {
   margin: 0;
 }
 
+/* Container for all the website content (header, main, and footer) */
 body {
   max-width: var(--max-page-width);
-  margin: auto;
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  margin: auto; /* Centers the website content within the browser */
+  display: flex; /* Flex layout allows easier control over the layout */
+  flex-direction: column; /* Stacks elements in the body vertically - helps align footer at bottom of page */
   min-height: 100vh;
+  padding: 0 20px;
 }
 
 /* Default (mobile) */
 header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-between; /* Pushes elements in header apart, so jpmoore is on the left and posts/about is on the right */
+  align-items: center; /* Aligns items vertically in the center of the header */
   margin: 0 0 50px 0;
-  padding: 0 1rem;
+  padding: 0 5px;
   background-color: var(--background-color);
-  position: sticky;
-  top: 0;
-  z-index: 10;
+  position: sticky; /* Sticks header in its position */
+  top: 0; /* Positions header to top of page so it stays present when user scrolls */
+  z-index: 10; /* Keeps header in front of everything else */
 }
 
 header h1 {
   font-size: 1.5rem;
 }
 
-/* Desktop */
-@media screen and (min-width: 768px) {
-  header {
-    display: block;
-    background-color: var(--background-color);
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    margin: 50px;
-    text-align: left;
-  }
-
-  header h1 {
-    font-size: 2rem;
-  }
-}
-
+/* Prevents the page 'title' (jpmoore) from inheriting the default <a> tag styling */
 #header-title {
   color: black;
   text-decoration: none;
-  transition: font-size 0.2s ease;
 }
 
-header.sticky {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 0 40px 0;
-  padding: 0 1rem;
-}
-
-header.sticky h1 {
-  font-size: 1.5rem;
-}
-
+/* Styles the 'posts' and 'about' navigation links in the header */
 header ul {
   display: flex;
-  justify-content: left;
-  gap: 2rem;
-  list-style: none;
+  gap: 2rem; /* Gap between posts and about */
+  list-style: none; /* Removes 'dot points' that are default for <ul> <li> elements */
   padding-left: 0;
 }
 
@@ -112,18 +87,21 @@ a.current-nav-link {
   color: var(--primary-orange);
 }
 
+/* "Grid" that contains all the posts displayed on the homepage */
 .posts-grid {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 column on mobile by default */
+  gap: 10px;
+  padding: 0;
 }
 
-.post-card:hover {
-  animation: hover-card 0.4s;
+.post-card-container:hover {
+  animation: hover-card 0.4s; /* Card opacity changes when hovering */
   animation-fill-mode: forwards; /* Animation ends and does not go back to 1 opacity unless hover stops */
   cursor: pointer;
 }
 
+/* Animation to change opacity of an item */
 @keyframes hover-card {
   from {
     opacity: 1;
@@ -134,43 +112,60 @@ a.current-nav-link {
 }
 
 a.post-card-link {
-  text-decoration: none;
+  text-decoration: none; /* Removes default <a> tag styling from post title in posts grid */
 }
 
 .post-card-title {
   text-align: center;
   color: var(--primary-blue);
-  width: 50%;
 }
 
-.post-card-link {
-  list-style: none;
-  padding: 5px;
+/* Default (mobiles, <460px wide) */
+.post-card-container {
+  list-style: none; /* Removes default <li> tag styling */
+}
+
+td > img {
   width: 100%;
 }
 
-@media screen and (min-width: 460px) {
-  .post-card-link {
-    list-style: none;
-    padding: 10px;
-    width: calc(50%);
+/* Tablets 520-768px wide */
+@media screen and (min-width: 520px) {
+  .posts-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 cols */
   }
 }
 
+/* Small screens 768-1024px wide */
+@media screen and (min-width: 768px) {
+  .posts-grid {
+    grid-template-columns: repeat(4, 1fr); /* 4 cols  */
+  }
+  td > img {
+    width: 50%;
+  }
+}
+
+/* Desktops (>1024px wide) */
 @media screen and (min-width: 1024px) {
-  .post-card-link {
-    list-style: none;
-    padding: 10px;
-    width: calc(33.3333%);
+  .posts-grid {
+    grid-template-columns: repeat(5, 1fr); /* 5 cols */
   }
 }
 
-.posts-grid img {
-  width: 50%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+/* Image container to control potential overflow of image from post card if image is not the same aspect ratio */
+.post-card-image-wrapper {
+  width: 100%;
+  aspect-ratio: 8/5;
   overflow: hidden;
-  object-position: top left;
+}
+
+.post-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Image "covers" entire container (doesn't shrink to fit) */
+  overflow: hidden; /* If the image is bigger than its container, it is cropped */
+  object-position: top left; /* Image is positioned starting at top-left corner */
 }
 
 /* Post date shown under title on a blog post page */
@@ -181,14 +176,9 @@ a.post-card-link {
 
 .post-content {
   max-width: 100%;
-  padding: 0 20px;
+  padding: 0;
 }
 
-.post-content p {
-  display: flex;
-  width: 100%;
-}
-
-.post-content img {
-  margin: auto;
+.post-content > table {
+  margin: 20px auto;
 }
