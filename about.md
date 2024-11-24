@@ -5,6 +5,6 @@ title: about
 
 ## About me
 
-Welcome to my little site to share graphs and data analysis on topics that interest me.
+Welcome. This is a space for me to share graphs and data visualisations on various topics that interest me. I use R for data exploration and analysis, and the ggplot2 package to create plots. I am currently learning to use Illustrator for refining the aesthetics.
 
-Contact me at jessicamoore.tn@gmail.com
+Contact: jessicamoore.tn@gmail.com
