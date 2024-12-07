@@ -132,24 +132,24 @@ td > img {
 /* Tablets 520-768px wide */
 @media screen and (min-width: 520px) {
   .posts-grid {
-    grid-template-columns: repeat(3, 1fr); /* 3 cols */
+    grid-template-columns: repeat(2, 1fr); /* 3 cols */
   }
 }
 
 /* Small screens 768-1024px wide */
 @media screen and (min-width: 768px) {
   .posts-grid {
-    grid-template-columns: repeat(3, 1fr); /* 3 cols  */
+    grid-template-columns: repeat(2, 1fr); /* 3 cols  */
   }
   td > img {
-    width: 50%;
+    width: 100%;
   }
 }
 
 /* Desktops (>1024px wide) */
 @media screen and (min-width: 1024px) {
   .posts-grid {
-    grid-template-columns: repeat(3, 1fr); /* 3 cols */
+    grid-template-columns: repeat(2, 1fr); /* 3 cols */
   }
 }
 
