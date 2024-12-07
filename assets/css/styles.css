@@ -142,7 +142,7 @@ td > img {
     grid-template-columns: repeat(2, 1fr); /* 2 cols  */
   }
   td > img {
-    width: 50%;
+    width: 100%;
   }
 }
 
