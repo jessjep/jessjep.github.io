@@ -1,5 +1,5 @@
 ---
-title: "Ding vs Gukesh"
+title: "DING/GUKESH"
 date: 2024-11-23
 image: "/assets/images/chess/dg_thumbnail.png"
 ---

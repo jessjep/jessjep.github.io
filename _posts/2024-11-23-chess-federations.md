@@ -1,5 +1,5 @@
 ---
-title: "Characteristics of the Largest Chess Federations"
+title: "CHESS FEDERATIONS"
 date: 2024-11-23
 image: "/assets/images/chess/chessfeds_thumbnail.png"
 ---
