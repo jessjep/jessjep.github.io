@@ -1,5 +1,5 @@
 :root {
-  --max-page-width: 1024px;
+  --max-page-width: 650px;
   /* The following colors have AAA contrast with white background if font size >18px or 14px and bold */
   --primary-blue: #016d77;
   --visited: #754263;
@@ -9,7 +9,7 @@
 
 * {
   box-sizing: border-box;
-  font-family: "Karla", sans-serif;
+  font-family: "Crimson Pro", serif;
 }
 
 /* Used for blog titles in both links on homepage and title of a post on it's specific page */
