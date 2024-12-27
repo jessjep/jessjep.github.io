@@ -1,21 +1,2 @@
-# Auto detect text files and perform LF normalization
+# Auto-detect text files and perform LF normalization
 * text=auto
-assets/images/dnd/spells_wide_files/d3-bundle-5.16.0/d3-bundle.min.js filter=lfs diff=lfs merge=lfs -text
-assets/images/dnd/spells_wide_files/girafe-binding-0.8.11 filter=lfs diff=lfs merge=lfs -text
-assets/images/dnd/spells_wide_files/save-svg-as-png-1.4.17/save-svg-as-png.min.js filter=lfs diff=lfs merge=lfs -text
-assets/images/dnd/spells_wide.html filter=lfs diff=lfs merge=lfs -text
-assets/images/dnd/spells_wide_files/d3-bundle-5.16.0 filter=lfs diff=lfs merge=lfs -text
-assets/images/dnd/spells_wide_files/htmltools-fill-0.5.8.1 filter=lfs diff=lfs merge=lfs -text
-assets/images/dnd/spells_wide_files/htmlwidgets-1.6.4 filter=lfs diff=lfs merge=lfs -text
-assets/images/dnd/spells_wide_files/htmlwidgets-1.6.4/htmlwidgets.js filter=lfs diff=lfs merge=lfs -text
-assets/images/dnd/spells_wide_files filter=lfs diff=lfs merge=lfs -text
-assets/images/dnd/spells_wide_files/ggiraphjs-0.8.10/ggiraphjs.min.css filter=lfs diff=lfs merge=lfs -text
-assets/images/dnd/spells_wide_files/girafe-binding-0.8.11/girafe.js filter=lfs diff=lfs merge=lfs -text
-assets/images/dnd/spells_wide_files/htmltools-fill-0.5.8.1/fill.css filter=lfs diff=lfs merge=lfs -text
-assets/images/dnd/spells_wide_files/save-svg-as-png-1.4.17 filter=lfs diff=lfs merge=lfs -text
-assets/images/dnd/spells_wide_files/d3-lasso-0.0.5 filter=lfs diff=lfs merge=lfs -text
-assets/images/dnd/spells_wide_files/d3-lasso-0.0.5/d3-lasso.min.js filter=lfs diff=lfs merge=lfs -text
-assets/images/dnd/spells_wide_files/flatbush-4.4.0 filter=lfs diff=lfs merge=lfs -text
-assets/images/dnd/spells_wide_files/flatbush-4.4.0/flatbush.min.js filter=lfs diff=lfs merge=lfs -text
-assets/images/dnd/spells_wide_files/ggiraphjs-0.8.10 filter=lfs diff=lfs merge=lfs -text
-assets/images/dnd/spells_wide_files/ggiraphjs-0.8.10/ggiraphjs.min.js filter=lfs diff=lfs merge=lfs -text
