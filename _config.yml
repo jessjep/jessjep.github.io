@@ -3,10 +3,15 @@ defaults:
       path: "" # empty string means all files in the project
       type: "posts"
     values:
-      layout: "post"
+      layout: "note"
   - scope:
       path: ""
     values:
       layout: "default"
 
 baseurl: ""
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
