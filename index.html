@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f94c9ec9ed548c717f02f9ecfcac16b142751d6655df40db8866b4eb7ef77a73
-size 463
+---
+title: data by jess
+---
+
+<ul class="posts-grid">
+  {% for post in site.posts %}
+  <a href="{{ post.url }}" class="post-card-link">
+    <li class="post-card">
+      {% if post.image %}
+      <img src="{{ post.image }}" alt="{{ post.title }}" />
+      {% endif %}
+      <!-- post.url is automatically set by jekyll to the output path of the post -->
+      <h2 class="post-card-title">{{ post.title }}</h2>
+    </li>
+  </a>
+  {% endfor %}
+</ul>
