@@ -1,5 +1,6 @@
 :root {
   --max-page-width: 650px;
+  --wide-page-width: 1000px;
   /* The following colors have AAA contrast with white background if font size >18px or 14px and bold */
   --primary-blue: #016d77;
   --visited: #754263;
@@ -24,6 +25,16 @@ body {
   width: 100%;
   margin: auto; /* Centers the website content within the browser */
   display: flex; /* Flex layout allows easier control over the layout */
+  flex-direction: column; /* Stacks elements in the body vertically - helps align footer at bottom of page */
+  min-height: 100vh;
+  padding: 0 20px;
+}
+
+/* Container for wider content */
+body.wide-content {
+  max-width: var(--wide-page-width); /* Remove the limit */
+  width: 100%; /* Ensures the div spans the full width of its container */
+  display: flex; /* Use flexbox for alignment */
   flex-direction: column; /* Stacks elements in the body vertically - helps align footer at bottom of page */
   min-height: 100vh;
   padding: 0 20px;
