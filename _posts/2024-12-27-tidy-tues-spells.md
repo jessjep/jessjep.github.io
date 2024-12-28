@@ -8,7 +8,6 @@ image: "/assets/images/dnd/thumnail.png"
 <iframe src="{{ '/assets/images/dnd/spells_wide.html' | relative_url }}" 
         width="1000px" 
         height="900px" 
-        style="border:none;">
+        style="position: relative; transform: translateX(-175px); border:none;">
 </iframe>
 </body>
-
