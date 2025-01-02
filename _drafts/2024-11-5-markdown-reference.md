@@ -6,6 +6,8 @@ image: "/assets/images/samples/sample-image-federica-fragapane-1.png"
 
 Reference sheet for running blog + markdown.
 
+https://www.markdownguide.org/cheat-sheet/
+
 # IMPORTANT
 
 Since I'm also working on this, it's important you check whether I've made changes to the website before you also make changes.
