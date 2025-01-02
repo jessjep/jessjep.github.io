@@ -1,6 +1,5 @@
 :root {
   --max-page-width: 650px;
-  --wide-content-width:800px;
   /* The following colors have AAA contrast with white background if font size >18px or 14px and bold */
   --primary-blue: #016d77;
   --visited: #754263;
@@ -28,23 +27,6 @@ body {
   flex-direction: column; /* Stacks elements in the body vertically - helps align footer at bottom of page */
   min-height: 100vh;
   padding: 0 20px;
-}
-
-body.wide-content {
-  max-width: var(--wide-content-width);
-  width: 100%;
-  margin: auto; /* Centers the website content within the browser */
-  display: flex; /* Flex layout allows easier control over the layout */
-  flex-direction: column; /* Stacks elements in the body vertically - helps align footer at bottom of page */
-  min-height: 100vh;
-  padding: 0 20px;
-}
-
-/* Container for iframe content */
-.iframe-container {
-  display: flex; 
-  align-items: center; 
-  justify-content: center; 
 }
 
 /* Default (mobile) */
