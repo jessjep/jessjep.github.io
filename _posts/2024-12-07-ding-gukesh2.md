@@ -1,5 +1,5 @@
 ---
-title: "DING/GUKESH ACCURACY"
+title: "Ding v Gukesh Accuracy"
 date: 2024-12-07
 image: "/assets/images/chess/dg_accuracy_thumbnail.svg"
 ---

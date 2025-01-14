@@ -1,5 +1,5 @@
 ---
-title: "CHESS FEDERATIONS"
+title: "Chess Federations"
 date: 2024-11-23
 image: "/assets/images/chess/chessfeds_thumbnail.png"
 ---
