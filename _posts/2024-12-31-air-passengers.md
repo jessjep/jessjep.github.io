@@ -1,5 +1,5 @@
 ---
-title: "Air Passengers, AUS"
+title: "Australian Air Passengers"
 date: 2024-12-27
 image: "/assets/images/travellers/thumbnail_passengers.png"
 ---

@@ -5,6 +5,7 @@
   --visited: #754263;
   --primary-orange: #d24529;
   --background-color: #ffffff;
+  --black: #000000;
 }
 
 * {
@@ -67,7 +68,7 @@ footer {
 }
 
 a {
-  color: var(--primary-blue);
+  color: var(--black);
 }
 
 a:visited {
@@ -80,7 +81,7 @@ a:visited {
 }
 
 a.nav-link {
-  color: var(--primary-blue);
+  color: var(--black);
 }
 
 a.current-nav-link {
@@ -117,7 +118,8 @@ a.post-card-link {
 
 .post-card-title {
   text-align: center;
-  color: var(--primary-blue);
+  color: var(--black);
+  font-weight: 200;
 }
 
 /* Default (mobiles, <460px wide) */
