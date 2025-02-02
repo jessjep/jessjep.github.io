@@ -1,3 +1,3 @@
-# Jessjep Portfolio
+# My Portfolio
 
-Portfolio for sharing data visualisation and more.
+A personal website for sharing data visualisations and more.
