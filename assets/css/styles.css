@@ -4,7 +4,7 @@
   --primary-blue: #016d77;
   --visited: #754263;
   --primary-orange: #d24529;
-  --background-color: #ffffff;
+  --background-color: #edf2f8;
   --black: #000000;
 }
 
@@ -28,6 +28,7 @@ body {
   flex-direction: column; /* Stacks elements in the body vertically - helps align footer at bottom of page */
   min-height: 100vh;
   padding: 0 20px;
+  background-color: var(--background-color);
 }
 
 /* Default (mobile) */
@@ -49,7 +50,7 @@ header h1 {
 
 /* Prevents the page 'title' (jpmoore) from inheriting the default <a> tag styling */
 #header-title {
-  color: black;
+  color: rgb(91, 149, 194);
   text-decoration: none;
 }
 
@@ -65,6 +66,7 @@ footer {
   padding: 4rem 0 1rem 0;
   text-align: center;
   margin: auto auto 0 auto;
+  background-color: var(--background-color);
 }
 
 a {
@@ -94,6 +96,7 @@ a.current-nav-link {
   grid-template-columns: repeat(2, 1fr); /* 2 column on mobile by default */
   gap: 10px;
   padding: 0;
+  background-color: var(--background-color);
 }
 
 .post-card-container:hover {
