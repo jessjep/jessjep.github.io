@@ -4,7 +4,7 @@
   --primary-blue: #016d77;
   --visited: #754263;
   --primary-orange: #d24529;
-  --background-color: #edf2f8;
+  --background-color: #f4f7fb;
   --black: #000000;
 }
 
@@ -111,7 +111,7 @@ a.current-nav-link {
     opacity: 1;
   }
   to {
-    opacity: 0.8;
+    opacity: 0.7;
   }
 }
 

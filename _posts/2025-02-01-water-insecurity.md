@@ -6,7 +6,7 @@ image: "/assets/images/tidytues/w4-25/water_tn.svg"
 
 My submission for week 4 of Tidy Tuesday, 2025 - an enhanced dumbbell plot. My code for the initial plot, created in R, is detailed below the image.
 
-<img src= "/assets/images/tidytues/w4-25/water_ins.png" style="height:800px;width:620px;margin:auto;" />
+<img src= "/assets/images/tidytues/w4-25/water_ins.png" style="height:800px;width:600px;margin:auto;" />
 
 ```R
 R Code: 
