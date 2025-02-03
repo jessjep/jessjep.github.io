@@ -4,8 +4,10 @@
   --primary-blue: #016d77;
   --visited: #754263;
   --primary-orange: #d24529;
+  --primary-purple: #b03669;
   --background-color: #f4f7fb;
   --black: #000000;
+  --title-color: rgb(91, 149, 194);
 }
 
 * {
@@ -50,7 +52,7 @@ header h1 {
 
 /* Prevents the page 'title' (jpmoore) from inheriting the default <a> tag styling */
 #header-title {
-  color: rgb(91, 149, 194);
+  color: --title-color;
   text-decoration: none;
 }
 
@@ -70,11 +72,11 @@ footer {
 }
 
 a {
-  color: var(--black);
+  color: var(--title-color);
 }
 
 a:visited {
-  color: var(--visited);
+  color: var(--title-color);
 }
 
 .nav-link {
@@ -83,11 +85,11 @@ a:visited {
 }
 
 a.nav-link {
-  color: var(--black);
+  color: var(--title-color);
 }
 
 a.current-nav-link {
-  color: var(--primary-orange);
+  color: var(--primary-purple);
 }
 
 /* "Grid" that contains all the posts displayed on the homepage */
@@ -160,6 +162,8 @@ td > img {
 
 /* Image container to control potential overflow of image from post card if image is not the same aspect ratio */
 .post-card-image-wrapper {
+  border-radius: 15px;
+  border: 0.5px solid #7eaaae;
   width: 100%;
   aspect-ratio: 8/5;
   overflow: hidden;
