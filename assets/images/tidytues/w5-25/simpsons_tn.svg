@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 896 560">
+  <!-- Generator: Adobe Illustrator 29.2.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 116)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #f05c3b;
+      }
+
+      .st0, .st1, .st2, .st3, .st4, .st5, .st6, .st7, .st8 {
+        stroke: #350700;
+        stroke-miterlimit: 10;
+        stroke-width: .2px;
+      }
+
+      .st1 {
+        fill: #c80813;
+      }
+
+      .st2 {
+        fill: #f06748;
+      }
+
+      .st2, .st4 {
+        font-size: 54.6px;
+      }
+
+      .st2, .st4, .st8 {
+        font-family: ChalkboardSE-Bold, 'Chalkboard SE';
+        font-weight: 700;
+      }
+
+      .st3 {
+        fill: #1a9993;
+      }
+
+      .st4, .st7 {
+        fill: #197ec0;
+      }
+
+      .st9 {
+        fill: #009ddc;
+      }
+
+      .st5 {
+        fill: #fed439;
+      }
+
+      .st6, .st8 {
+        fill: #ebf6ff;
+      }
+
+      .st8 {
+        font-size: 32.8px;
+      }
+    </style>
+  </defs>
+  <rect class="st9" x="-1.2" width="897.2" height="560"/>
+  <path class="st5" d="M29.6,172.4h236c8.9,0,16.2-7.3,16.2-16.2v-43.6c0-8.9-7.3-16.2-16.2-16.2H29.6v76Z"/>
+  <path class="st1" d="M29.6,256.9h144.7c8.9,0,16.2-7.3,16.2-16.2v-43.6c0-8.9-7.3-16.2-16.2-16.2H29.6v76Z"/>
+  <path class="st7" d="M29.6,341.3h130.8c8.9,0,16.2-7.3,16.2-16.2v-43.6c0-8.9-7.3-16.2-16.2-16.2H29.6v76Z"/>
+  <path class="st6" d="M29.6,425.8h64.3c8.9,0,16.2-7.3,16.2-16.2v-43.6c0-8.9-7.3-16.2-16.2-16.2H29.6v76Z"/>
+  <path class="st6" d="M29.6,510.2h44.2c8.9,0,16.2-7.3,16.2-16.2v-43.6c0-8.9-7.3-16.2-16.2-16.2H29.6v76Z"/>
+  <path class="st5" d="M590.9,172.4h259.3c8.9,0,16.2-7.3,16.2-16.2v-43.6c0-8.9-7.3-16.2-16.2-16.2h-259.3v76Z"/>
+  <path class="st5" d="M590.9,256.9h200.4c8.9,0,16.2-7.3,16.2-16.2v-43.6c0-8.9-7.3-16.2-16.2-16.2h-200.4v76Z"/>
+  <path class="st3" d="M590.9,341.3h93.7c8.9,0,16.2-7.3,16.2-16.2v-43.6c0-8.9-7.3-16.2-16.2-16.2h-93.7v76Z"/>
+  <path class="st1" d="M590.9,425.8h82.8c8.9,0,16.2-7.3,16.2-16.2v-43.6c0-8.9-7.3-16.2-16.2-16.2h-82.8v76Z"/>
+  <path class="st0" d="M590.9,510.2h79.7c8.9,0,16.2-7.3,16.2-16.2v-43.6c0-8.9-7.3-16.2-16.2-16.2h-79.7v76Z"/>
+  <text class="st2" transform="translate(29.6 77.3)"><tspan x="0" y="0">LISA</tspan></text>
+  <text class="st4" transform="translate(590.9 74.6)"><tspan x="0" y="0">MARGE</tspan></text>
+  <text class="st8" transform="translate(456.3 141.3)"><tspan x="0" y="0">Homer</tspan></text>
+  <text class="st8" transform="translate(464.2 225.8)"><tspan x="0" y="0">Homie</tspan></text>
+  <text class="st8" transform="translate(494.5 310.2)"><tspan x="0" y="0">Kids</tspan></text>
+  <text class="st8" transform="translate(488.3 394.6)"><tspan x="0" y="0">Bart</tspan></text>
+  <text class="st8" transform="translate(497.3 479.1)"><tspan x="0" y="0">Lisa</tspan></text>
+</svg>
