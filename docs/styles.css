@@ -1,45 +1,46 @@
-::: {.post-grid}
-<!-- your post cards here -->
-:::
-
-<style>
-.post-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
-}
-
-.post-card {
+.card {
+  border: none !important;
+  background: none !important;
+  padding: 0 !important;
   position: relative;
-  aspect-ratio: 1 / 1;
-  background: #f0f0f0;
-  text-decoration: none;
-  color: inherit;
   overflow: hidden;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
+  aspect-ratio: 4 / 3;
 }
 
-.post-card:hover {
-  transform: scale(1.03);
+.card-body {
+  padding: 0 !important;
 }
 
-.post-content {
+.card-img-top {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .card-body > div {
   position: absolute;
   inset: 0;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.45);
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  background: rgba(0, 0, 0, 0.6);
-  color: white;
+  justify-content: center;
   opacity: 0;
   transition: opacity 0.3s ease;
-  text-align: center;
-  padding: 1rem;
 }
 
-.post-card:hover .post-content {
+.card:hover .card-body > div {
   opacity: 1;
 }
-</style>
+
+.card-link {
+  color: white !important;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.navbar {
+  background: linear-gradient(135deg, #7b9bb5, #c9a4b8) !important;
+}

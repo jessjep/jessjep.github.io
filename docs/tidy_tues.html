@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       valueNames: ['listing-image','listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       page: 18,
     pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -130,6 +130,7 @@ window.Quarto = {
 </script>
 
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="custom-style.css">
 </head>
 
 <body class="nav-fixed">
@@ -180,11 +181,9 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(20)</span></div></div></div>
+    
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -193,7 +192,7 @@ window.Quarto = {
 
 
 
-<div class="quarto-title-meta column-page-left">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -211,7 +210,7 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-date-sort="1764248400000" data-listing-file-modified-sort="1764308449813" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="168">
+<div class="g-col-1" data-index="0" data-listing-date-sort="1764248400000" data-listing-file-modified-sort="1778306067311" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="168">
 <a href="./posts/tidy_tues/sherlock/sherlock.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -225,7 +224,7 @@ Tidy Tuesday: Sherlock
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-listing-date-sort="1759240800000" data-listing-file-modified-sort="1763427296254" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="654">
+<div class="g-col-1" data-index="1" data-listing-date-sort="1759240800000" data-listing-file-modified-sort="1778306067305" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="654">
 <a href="./posts/tidy_tues/cranes/cranes.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -239,7 +238,7 @@ Tidy Tuesday: Cranes
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-listing-date-sort="1758636000000" data-listing-file-modified-sort="1758709434726" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="705">
+<div class="g-col-1" data-index="2" data-listing-date-sort="1758636000000" data-listing-file-modified-sort="1778306067306" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="705">
 <a href="./posts/tidy_tues/fide_ratings/fide_ratings.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -253,7 +252,7 @@ Tidy Tuesday: FIDE Chess Ratings
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="3" data-listing-date-sort="1757512800000" data-listing-file-modified-sort="1757585177372" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="660">
+<div class="g-col-1" data-index="3" data-listing-date-sort="1757512800000" data-listing-file-modified-sort="1778306067307" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="660">
 <a href="./posts/tidy_tues/henley/henley.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -267,7 +266,7 @@ Tidy Tuesday: Henley Passport Index
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="4" data-listing-date-sort="1756735200000" data-listing-file-modified-sort="1756785015574" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="753">
+<div class="g-col-1" data-index="4" data-listing-date-sort="1756735200000" data-listing-file-modified-sort="1778306067308" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="753">
 <a href="./posts/tidy_tues/oz_frogs/frogs.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -281,7 +280,7 @@ Tidy Tuesday: Australian Frogs
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="5" data-listing-date-sort="1756562400000" data-listing-file-modified-sort="1756697542232" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="737">
+<div class="g-col-1" data-index="5" data-listing-date-sort="1756562400000" data-listing-file-modified-sort="1778306067304" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="737">
 <a href="./posts/tidy_tues/billboard/billboard.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -295,7 +294,7 @@ Tidy Tuesday: Billboard Hot 100 #1s
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="6" data-listing-date-sort="1755784800000" data-listing-file-modified-sort="1755846184835" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="938">
+<div class="g-col-1" data-index="6" data-listing-date-sort="1755784800000" data-listing-file-modified-sort="1778306067307" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="938">
 <a href="./posts/tidy_tues/munros/munros.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -309,7 +308,7 @@ Tidy Tuesday: Scotland’s Munros
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="7" data-listing-date-sort="1749218400000" data-listing-file-modified-sort="1749281315159" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="538">
+<div class="g-col-1" data-index="7" data-listing-date-sort="1749218400000" data-listing-file-modified-sort="1778306067309" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="538">
 <a href="./posts/tidy_tues/projgutenberg/pgutenberg.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -323,7 +322,7 @@ Tidy Tuesday: Project Gutenberg
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="8" data-listing-date-sort="1748268000000" data-listing-file-modified-sort="1756099663768" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1132">
+<div class="g-col-1" data-index="8" data-listing-date-sort="1748268000000" data-listing-file-modified-sort="1778306067306" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1132">
 <a href="./posts/tidy_tues/dnd-monsters/monsters.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -337,7 +336,7 @@ Tidy Tuesday: D&amp;D Monsters
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="9" data-listing-date-sort="1745157600000" data-listing-file-modified-sort="1745201981611" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="704">
+<div class="g-col-1" data-index="9" data-listing-date-sort="1745157600000" data-listing-file-modified-sort="1778306067303" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="704">
 <a href="./posts/tidy_tues/420/420.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -351,7 +350,7 @@ Tidy Tuesday: 420 Data
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="10" data-listing-date-sort="1743426000000" data-listing-file-modified-sort="1743473428278" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="512">
+<div class="g-col-1" data-index="10" data-listing-date-sort="1743426000000" data-listing-file-modified-sort="1778306067309" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="512">
 <a href="./posts/tidy_tues/pokemon/pokemon.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -365,7 +364,7 @@ Tidy Tuesday: Pokemon
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="11" data-listing-date-sort="1742994000000" data-listing-file-modified-sort="1743045368265" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="779">
+<div class="g-col-1" data-index="11" data-listing-date-sort="1742994000000" data-listing-file-modified-sort="1778306067304" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="779">
 <a href="./posts/tidy_tues/amazon/amazon.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -379,7 +378,7 @@ Tidy Tuesday: Amazon’s Annual Reports
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="12" data-listing-date-sort="1742302800000" data-listing-file-modified-sort="1742697703136" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="576">
+<div class="g-col-1" data-index="12" data-listing-date-sort="1742302800000" data-listing-file-modified-sort="1778306067308" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="576">
 <a href="./posts/tidy_tues/palmtrees/2025-03-19-palms.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -393,7 +392,7 @@ Tidy Tuesday: Palm Trees
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="13" data-listing-date-sort="1742043600000" data-listing-file-modified-sort="1742697703136" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="54">
+<div class="g-col-1" data-index="13" data-listing-date-sort="1742043600000" data-listing-file-modified-sort="1778306067309" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="54">
 <a href="./posts/tidy_tues/pixar/2025-03-16-pixar.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -407,7 +406,7 @@ Tidy Tuesday: Pixar Films
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="14" data-listing-date-sort="1740574800000" data-listing-file-modified-sort="1741330514495" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+<div class="g-col-1" data-index="14" data-listing-date-sort="1740574800000" data-listing-file-modified-sort="1778306067307" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
 <a href="./posts/tidy_tues/long-beach/2025-03-04-long-beach.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -421,7 +420,7 @@ Tidy Tuesday: Long Beach Animal Rescue
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="15" data-listing-date-sort="1740574800000" data-listing-file-modified-sort="1741330531843" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="18">
+<div class="g-col-1" data-index="15" data-listing-date-sort="1740574800000" data-listing-file-modified-sort="1778306067310" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="18">
 <a href="./posts/tidy_tues/racial-disparities/2025-02-27-racial-disparities.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -435,7 +434,7 @@ Tidy Tuesday: Racial Disparities
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="16" data-listing-date-sort="1739970000000" data-listing-file-modified-sort="1741330499555" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="48">
+<div class="g-col-1" data-index="16" data-listing-date-sort="1739970000000" data-listing-file-modified-sort="1778306067306" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="48">
 <a href="./posts/tidy_tues/fbi-crime-api/2025-02-20-fbi_crime_api.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -449,7 +448,7 @@ Tidy Tuesday: FBI Crime Data API
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="17" data-listing-date-sort="1739192400000" data-listing-file-modified-sort="1741330483803" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="47">
+<div class="g-col-1" data-index="17" data-listing-date-sort="1739192400000" data-listing-file-modified-sort="1778306067305" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="47">
 <a href="./posts/tidy_tues/cdc-datasets/2025-02-11-cdc-datasets.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -463,7 +462,7 @@ Tidy Tuesday: CDC Datasets
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="18" data-listing-date-sort="1738328400000" data-listing-file-modified-sort="1741330558214" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="42">
+<div class="g-col-1" data-index="18" data-listing-date-sort="1738328400000" data-listing-file-modified-sort="1778306067312" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="42">
 <a href="./posts/tidy_tues/simpsons/2025-02-07-simpsons.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -477,7 +476,7 @@ Tidy Tuesday: The Simpsons
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="19" data-listing-date-sort="1738328400000" data-listing-file-modified-sort="1741331141436" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="603">
+<div class="g-col-1" data-index="19" data-listing-date-sort="1738328400000" data-listing-file-modified-sort="1778306067312" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="603">
 <a href="./posts/tidy_tues/water-insecurity/2025-02-01-water-insecurity.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -589,7 +588,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/jessjep\.github\.io");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }

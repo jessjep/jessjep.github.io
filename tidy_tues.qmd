@@ -1,10 +1,13 @@
 ---
 title: "Tidy Tuesday Posts"
+format:
+  html:
+    css: custom-style.css
 listing:
   contents: posts/tidy_tues/**/*.qmd
   sort: "date desc"
   type: grid
-  categories: true
+  categories: false
   sort-ui: false
   filter-ui: false
   fields: [image, title]

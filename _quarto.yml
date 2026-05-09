@@ -3,22 +3,23 @@ project:
   output-dir: docs
 
 website:
-    title: "Jessica Moore"
-    navbar:
-      right:
-      - text: "Posts"
-        icon: flower1
-        href: blog.qmd
-      - text: "Github"
-        icon: github
-        href: https://github.com/jessjep
-      - text: "Bluesky"
-      - icon: bootstrap-fill
-        href: https://bsky.app/profile/jessimoore.bsky.social
+  site-url: "https://jessjep.github.io"
+  title: "Jessica Moore"
+  navbar:
+    right:
+    - text: "Posts"
+      icon: flower1
+      href: blog.qmd
+    - text: "Github"
+      icon: github
+      href: https://github.com/jessjep
+    - text: "Bluesky"
+    - icon: bootstrap-fill
+      href: https://bsky.app/profile/jessimoore.bsky.social
+
 format:
   html:
     theme: minty
-    css: styles.css
+    css: [styles.css, custom-style.css]
 
 editor: visual
-

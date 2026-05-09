@@ -29,10 +29,6 @@
     ]
   },
   {
-    "listing": "/posts/tidy_tues/tidy_tues.html",
-    "items": []
-  },
-  {
     "listing": "/tidy_tues.html",
     "items": [
       "/posts/tidy_tues/sherlock/sherlock.html",
@@ -60,7 +56,6 @@
   {
     "listing": "/chess_posts.html",
     "items": [
-      "/posts/chess_posts/chess2/chess2.html",
       "/posts/chess_posts/tableau-chess/chess_tableau.html",
       "/posts/chess_posts/Chess Federations/chess-feds.html",
       "/posts/chess_posts/chess1/2024-10-25-chess1.html"

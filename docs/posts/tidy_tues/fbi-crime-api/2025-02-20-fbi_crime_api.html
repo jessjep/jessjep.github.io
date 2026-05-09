@@ -70,6 +70,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../../../styles.css">
+<link rel="stylesheet" href="../../../custom-style.css">
 </head>
 
 <body class="nav-fixed">
@@ -83,12 +84,36 @@ ul.task-list li input[type="checkbox"] {
     <span class="navbar-title">Jessica Moore</span>
     </a>
   </div>
-        <div class="quarto-navbar-tools tools-wide tools-end">
-    <a href="../../../blog.html" title="blog.html" class="quarto-navigation-tool px-1" aria-label="blog.html"><i class="bi bi-flower1"></i></a>
-    <a href="https://github.com/jessjep" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
-    <a href="https://bsky.app/profile/jessimoore.bsky.social" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-bootstrap-fill"></i></a>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../blog.html"> <i class="bi bi-flower1" role="img">
+</i> 
+<span class="menu-text">Posts</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://github.com/jessjep"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text">Github</span></a>
+  </li>  
+  <li class="nav-item">
+    <span class="nav-link">
+<span class="menu-text">Bluesky</span>
+    </span>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://bsky.app/profile/jessimoore.bsky.social"> <i class="bi bi-bootstrap-fill" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
 </div>
-          <div id="quarto-search" class="" title="Search"></div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -224,7 +249,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/jessjep\.github\.io");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
