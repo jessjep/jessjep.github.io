@@ -1,4 +1,4 @@
-#quarto-content {
+.quarto-listing-page #quarto-content {
   display: flex;
   justify-content: center;
 }
@@ -15,15 +15,22 @@
 .quarto-grid-item .card {
   position: relative;
   overflow: hidden;
-  aspect-ratio: 3 / 2;
   padding: 0 !important;
+  border: none !important;
+  background: none !important;
 }
 
 .quarto-grid-item .thumbnail-image {
-  height: 100% !important;
+  height: 20vw !important;  /* change this value to resize */
   width: 100% !important;
   object-fit: cover;
   display: block;
+}
+
+@media (max-width: 768px) {
+  .quarto-grid-item .thumbnail-image {
+    height: 50vw !important;
+  }
 }
 
 .quarto-grid-item .card-body {

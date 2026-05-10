@@ -14,7 +14,7 @@ website:
       icon: github
       href: https://github.com/jessjep
     - text: "Bluesky"
-    - icon: bootstrap-fill
+      icon: bootstrap-fill
       href: https://bsky.app/profile/jessimoore.bsky.social
 
 format:

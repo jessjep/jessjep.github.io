@@ -1,63 +1,63 @@
 ---
-title: "Welcome 👋"
-about:
-  template: jolla
-  links:
-    - icon: bootstrap-fill
-      text: Bluesky
-      href: https://bsky.app/profile/jessimoore.bsky.social
-    - icon: github
-      text: Github
-      href: https://github.com/jessjep
+title: ""
+format:
+  html:
+    include-in-header:
+      text: |
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
 ---
 
-I'm developing my skills in data visualisation and analysis. This is a platform for me to share my various personal projects all in one place.
+:::::::::::::::: {style="display: flex; justify-content: center; gap: 0.5rem; align-items: flex-start; width: fit-content; margin: 0 auto;"}
+<!-- Left column: tiles -->
 
-Contact me at: [jessicamoore.tn\@gmail.com](mailto:jessicamoore.tn@gmail.com)
-
-::::::::::::::: grid
-:::::: {.g-col-12 .g-col-md-4}
+:::::::::::: tile-col
 ::::: card
 :::: {.card-body .d-flex .flex-column}
-```{=html}
-<img src="posts/tidy_tues/sherlock/holmes_doctors.png" alt="Latest post image" class="card-img-top" style="width: 100%; height: 250px; object-fit: cover; overflow: hidden;
-  object-position: top left;"/>
-```
+<img src="posts/tidy_tues/sherlock/holmes_doctors.png" alt="Latest post image" class="card-img-top" style="width: 190px; height: 150px; object-fit: cover; overflow: hidden; object-position: top left;"/>
 
 ::: {style="margin-top: auto;"}
 <a href="posts/tidy_tues/sherlock/sherlock.qmd" class="card-link">Latest post</a>
 :::
 ::::
 :::::
-::::::
 
-:::::: {.g-col-12 .g-col-md-4}
 ::::: card
 :::: {.card-body .d-flex .flex-column}
-```{=html}
-<img src="posts/tidy_tues/palmtrees/palms.png" alt="TidyTuesday image" class="card-img-top" style="width: 100%; height: 250px; object-fit: cover;overflow: hidden;
-  object-position: top center;"/>
-```
+<img src="posts/tidy_tues/palmtrees/palms.png" alt="TidyTuesday image" class="card-img-top" style="width: 190px; height: 150px; object-fit: cover; overflow: hidden; object-position: top center;"/>
 
 ::: {style="margin-top: auto;"}
 <a href="tidy_tues.qmd" class="card-link">Tidy Tuesday posts</a>
 :::
 ::::
 :::::
-::::::
 
-:::::: {.g-col-12 .g-col-md-4}
 ::::: card
 :::: {.card-body .d-flex .flex-column}
-```{=html}
-<img src="posts/chess_posts/Chess Federations/final_copy.png" alt="TidyTuesday image" class="card-img-top" style="width: 100%; height: 250px; object-fit: cover;overflow: hidden;
-  object-position: top left;"/>
-```
+<img src="posts/chess_posts/Chess Federations/final_copy.png" alt="TidyTuesday image" class="card-img-top" style="width: 190px; height: 150px; object-fit: cover; overflow: hidden; object-position: top left;"/>
 
 ::: {style="margin-top: auto;"}
 <a href="chess_posts.qmd" class="card-link">Chess posts</a>
 :::
 ::::
 :::::
-::::::
-:::::::::::::::
+::::::::::::
+
+::: divider-line
+:::
+
+<!-- Right column: about -->
+
+:::: about-col
+### About
+
+Hello and welcome to my personal site. I'm Jess and I enjoy the creative work of communicating data effectively, particularly using visualisations. This is a platform for me to share my various personal projects all in one place.
+
+::: about-links
+[<i class="fa-solid fa-envelope"></i> jessicamoore.tn@gmail.com](mailto:jessicamoore.tn@gmail.com){.about-link}
+
+[<i class="fa-brands fa-bluesky"></i> Bluesky](https://bsky.app/profile/jessimoore.bsky.social){.about-link}
+
+[<i class="fa-brands fa-github"></i> Github](https://github.com/jessjep){.about-link}
+:::
+::::
+::::::::::::::::
