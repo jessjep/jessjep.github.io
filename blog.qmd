@@ -1,4 +1,7 @@
 ---
+format:
+  html:
+    css: styles.css
 listing:
   contents: posts/**/*.qmd
   sort: "date desc"
