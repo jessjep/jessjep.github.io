@@ -1,0 +1,15 @@
+{
+  "hash": "254f2eb6ba540734b8e531f498288756",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Tidy Tuesday: AIOE\"\ndate: 2026-10-23\nexecute:\n  echo: true\n  warning: false\n  message: false\nimage: \"AIOE.png\"\ntags: \n  - tidytuesday\n---\n\n\n\n![](AIOE.png)\n\n\n\n::: {.cell}\n\n```{.r .cell-code  code-fold=\"true\" code-summary=\"Code\"}\nlibrary(tidyverse)\nlibrary(paletteer)\nlibrary(ggforce)\nlibrary(scales)\n\ntuesdata <- tidytuesdayR::tt_load(2026, week = 42)\n\nai_salary_majors <- tuesdata$ai_salary_majors\n\n#fields by number of graduates\nfields_df <- ai_salary_majors %>%\n  group_by(broad_field) %>%\n  summarise(total_n_grads = sum(n_graduates, na.rm = TRUE)) %>%\n  slice_max(total_n_grads, n = 6)\n\n\n#plotting\nscatter <- ggplot(ai_salary_majors %>% \n              filter(broad_field %in% fields_df$broad_field),\n            aes(ai_exposure, median_starting_salary, color = broad_field)) +\n  geom_point(size = 4) +\n  xlim(-1.5, 1.5) +\n  geom_mark_hull(aes(fill = broad_field),\n                 concavity = 5,\n                 alpha = 0.03,\n                 size = 0.2) +\n  scale_color_paletteer_d(\"MetBrewer::Klimt\") +\n  labs(x = \"AI exposure\",\n       y = \"Median starting salary\")  +\n  scale_y_continuous(labels = label_dollar())+\n  theme_minimal(base_size = 16) +\n  theme(legend.position = \"none\")\n  \nlegend <- ggplot(fields_df,\n                 aes(total_n_grads,\n                     fct_reorder(broad_field, total_n_grads),\n                     fill = broad_field)) +\n  geom_bar(stat = \"identity\") +\n  scale_fill_paletteer_d(\"MetBrewer::Klimt\") +\n  scale_x_continuous(labels = label_comma()) +\n  labs(x = \"Total graduates\",\n       y = NULL) +\n  theme_minimal(base_size = 16) +\n  theme(legend.position = \"none\")\n\n#finish assembling using Figma\n```\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

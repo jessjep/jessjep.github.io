@@ -2,6 +2,7 @@
   {
     "listing": "/blog.html",
     "items": [
+      "/posts/tidy_tues/AIOE/AIOE.html",
       "/posts/tidy_tues/sherlock/sherlock.html",
       "/posts/tidy_tues/cranes/cranes.html",
       "/posts/tidy_tues/fide_ratings/fide_ratings.html",
@@ -31,6 +32,7 @@
   {
     "listing": "/tidy_tues.html",
     "items": [
+      "/posts/tidy_tues/AIOE/AIOE.html",
       "/posts/tidy_tues/sherlock/sherlock.html",
       "/posts/tidy_tues/cranes/cranes.html",
       "/posts/tidy_tues/fide_ratings/fide_ratings.html",
